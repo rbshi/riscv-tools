@@ -7,6 +7,6 @@
 echo "Starting RISC-V Toolchain build process"
 
 build_project riscv-fesvr --prefix=$RISCV
-build_project riscv-isa-sim --prefix=$RISCV --with-fesvr=$RISCV
+build_project riscv-isa-sim --prefix=$RISCV --with-fesvr=$RISCV --enable-dirty --enable-histogram --enable-misaligned
 
 echo -e "\\nRISC-V Toolchain installation completed!"
